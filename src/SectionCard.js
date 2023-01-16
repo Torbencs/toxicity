@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function SectionCard({ title, subtitle, score, id, setHover }) {
   return (
-    <Link to={`/toxicity/${title}`}>
+    <Link to={`/toxicity/${title.toLowerCase()}`}>
       <div
         className="font-sans w-60 hover:bg-gray-800 p-3 rounded-md"
         onMouseEnter={() => setHover(id)}

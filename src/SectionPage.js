@@ -5,6 +5,7 @@ import { faLongArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function SectionPage() {
   const { id } = useParams();
+  const [first, ...rest] = id;
   return (
     <div className="p-10 max-w-3xl">
       <Link to={`/`} className="text-gray-300">
@@ -13,7 +14,9 @@ export default function SectionPage() {
           icon={faLongArrowLeft}
         />
       </Link>
-      <h1 className="text-white font-bold text-2xl pt-10 pb-5">{id}</h1>
+      <h1 className="text-white font-bold text-2xl pt-10 pb-5">
+        {first.toUpperCase() + rest.join("")}
+      </h1>
       <p className="text-base text-gray-500 font-normal">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id nulla
         enim. Morbi euismod euismod elit a suscipit. Morbi ex dui, egestas ut
