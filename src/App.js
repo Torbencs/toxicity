@@ -8,7 +8,7 @@ function App() {
       <div className="flex flex-row  bg-[#141b26]  rounded-lg shadow-md w-max h-3/4">
         <img
           className="object-contain rounded-tl-lg rounded-bl-lg h-full"
-          src="images/score.png"
+          src="images/side-banner.png"
           alt=""
         ></img>
         <Outlet />
