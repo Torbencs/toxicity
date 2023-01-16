@@ -6,6 +6,7 @@ import { faLongArrowLeft } from "@fortawesome/free-solid-svg-icons";
 export default function SectionPage() {
   const { id } = useParams();
   const [first, ...rest] = id;
+
   return (
     <div className="p-10 max-w-3xl">
       <Link to={`/`} className="text-gray-300">
