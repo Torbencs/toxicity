@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 1fr;
+    gap: 12px 12px;
+    grid-template-areas:
+        "vector benchmark"
+        "vector toxicmats";
+}
+.vector {
+    grid-area: vector;
+    background-color: blueviolet;
+}
+
+.benchmark {
+    grid-area: benchmark;
+    background-color: red;
+}
+
+.toxicmats {
+    grid-area: toxicmats;
+    background-color: blue;
+}

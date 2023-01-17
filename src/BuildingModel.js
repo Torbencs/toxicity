@@ -22,7 +22,9 @@ export default function BuildingModel({ currentHover }) {
           src={`images/${element}.png`}
           //   style={{ top: `-${index * 65}px`, ...show }}
           style={
-            element === currentHover
+            currentHover === null
+              ? { top: `-${index * 65}px`, opacity: 1 }
+              : element === currentHover
               ? { top: `-${index * 65}px`, ...show }
               : { top: `-${index * 65}px`, ...hide }
           }
